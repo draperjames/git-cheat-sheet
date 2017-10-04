@@ -374,6 +374,11 @@ $ git fetch <remote>
 $ git remote pull <remote> <url>
 ```
 
+#### Delete any untracked files that might remain after a pull:
+```
+git clean -fd
+```
+
 ##### Get all changes from HEAD to local repository:
 ```
 $ git pull origin master
