@@ -2,7 +2,7 @@
 
 <hr>
 <p align="center">
-    <img alt="Git" src="./Img/git-logo.png" height="190" width="455">
+    <img alt="Git" src="./Img/git-logo.png" width="250">
 </p>
 <hr>
 
@@ -241,6 +241,11 @@ $ git log
 $ git log --oneline
 ```
 
+##### Show the ten latest commits without the pager:
+```
+$ git --no-pager log --oneline -n 10
+```
+
 ##### Show all commits of a specific user:
 ```
 $ git log --author="username"
@@ -345,6 +350,13 @@ $ git tag <tag-name>
 ```
 $ git tag -a <tag-name>
 ```
+
+##### Delete a given tag:
+```
+$ git tag -d <tag-name>
+```
+
+
 <hr>
 
 ## Update & Publish
@@ -379,6 +391,11 @@ $ git remote pull <remote> <url>
 git clean -fd
 ```
 
+#### Delete any untracked files:
+```
+git clean -fxd
+```
+
 ##### Get all changes from HEAD to local repository:
 ```
 $ git pull origin master
@@ -407,6 +424,12 @@ $ git push <remote> --delete <branch> (since Git v1.7.0)
 ```
 $ git push --tags
 ```
+
+##### Publish your tags to the remote:
+```
+$ git push origin --tags
+```
+
 <hr>
 
 #### Configure the merge tool globally to meld (editor)
