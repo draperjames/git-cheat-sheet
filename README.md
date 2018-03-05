@@ -356,6 +356,10 @@ $ git tag -a <tag-name>
 $ git tag -d <tag-name>
 ```
 
+##### Append a tag to an old commit
+```
+git tag -a <tag> <commit hash> -m <message>
+```
 
 <hr>
 
